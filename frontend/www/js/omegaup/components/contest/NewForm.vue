@@ -373,7 +373,6 @@ import { types } from '../../api_types';
 export default class NewForm extends Vue {
   @Prop() update!: boolean;
   @Prop() allLanguages!: string[];
-  @Prop({ default: 'private' }) admissionMode!: string;
   @Prop({ default: '' }) initialAlias!: string;
   @Prop({ default: '' }) initialDescription!: string;
   @Prop({ default: 'none' }) initialFeedback!: string;
@@ -500,7 +499,7 @@ export default class NewForm extends Vue {
   onSubmit() {
     const contest: types.ContestAdminDetails = {
       admin: true,
-      admission_mode: this.update ? this.admissionMode : 'private',
+      admission_mode: this.update ? null : 'private',
       alias: this.alias,
       archived: false,
       available_languages: {},
@@ -521,7 +520,6 @@ export default class NewForm extends Vue {
       penalty: this.penalty,
       scoreboard: this.scoreboard,
       penalty_type: this.penaltyType,
-      default_show_all_contestants_in_scoreboard: false,
       show_scoreboard_after: this.showScoreboardAfter,
       partial_score: this.partialScore,
       needs_basic_information: this.needsBasicInformation,
