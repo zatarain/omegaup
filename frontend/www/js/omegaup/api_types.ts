@@ -2688,12 +2688,12 @@ export namespace types {
 
   export interface ContestAdminDetails {
     admin: boolean;
-    admission_mode: string | null;
+    admission_mode: string;
     alias: string;
     archived: boolean;
     available_languages: { [key: string]: string };
     contest_for_teams: boolean;
-    default_show_all_contestants_in_scoreboard?: boolean;
+    default_show_all_contestants_in_scoreboard: boolean;
     description: string;
     director: string;
     feedback: string;
