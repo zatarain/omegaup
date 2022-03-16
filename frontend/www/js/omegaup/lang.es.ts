@@ -1559,6 +1559,7 @@ const translations: { [key: string]: string; } = {
   wordsDangerZone: "\u00c1rea Peligrosa",
   wordsDangerZoneDesc: "Eliminar el problema.\n\nEsto \u00fanicamente se puede hacer si el problema no ha sido usado en un curso o concurso.\n\nDebes estar muy seguro de querer hacerlo, porque no hay manera de recuperarlo una vez eliminado.",
   wordsDate: "Fecha",
+  wordsDefaultShowAllContestantsInScoreboard: "Mostrar a todos los concursantes en el scoreboard por defecto",
   wordsDelete: "Eliminar",
   wordsDeleted: "Eliminado",
   wordsDenied: "Rechazado",
