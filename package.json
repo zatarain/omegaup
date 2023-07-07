@@ -91,7 +91,7 @@
     "source-map-support": "^0.5.19",
     "stream-browserify": "^3.0.0",
     "style-loader": "^2.0",
-    "stylelint": "^13.13",
+    "stylelint": "^15.10",
     "stylelint-config-standard": "^21.0.0",
     "ts-jest": "^26.5.5",
     "ts-loader": "^8.0",
